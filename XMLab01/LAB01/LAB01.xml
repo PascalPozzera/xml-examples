@@ -2,6 +2,8 @@
 
 <turnament>
 
+
+
 	<shooting-style id="BB-R">
 		<style-name>Barebow Recurve</style-name>
 	</shooting-style>
@@ -12,16 +14,7 @@
 		<style-name>Traditional Recurve Bow</style-name>
 	</shooting-style>
 
-	<person id="1-BBR-FSC">
-		<firstname>Robert</firstname>
-		<lastname>Roberts</lastname>
-		<birthyear>1962</birthyear>
-		<gender>M</gender>
-		<shootingstyle shooting-style-id ="BB-R"></shootingstyle>
-		<shootingstyle shooting-style-id ="FS-C"></shootingstyle>
-		<score shooting-style-id="BB-R">9999</score>
-		<score shooting-style-id="FS-C">9999</score>
-	</person>	
+	<!--  Group's -->
 	
 	<group id="Group-A-BB-R">
 		<start-time></start-time>
@@ -70,6 +63,25 @@
 		<shootingstyle shooting-style-id ="TR"></shootingstyle>
 		<person id="1-BBR-FSC"></person>		
 	</group>
+	
+	
+	
+	
+	
+	<!--     Person's               -->
+	
+	
+	<person id="1-BBR-FSC">
+		<firstname>Robert</firstname>
+		<lastname>Roberts</lastname>
+		<birthyear>1962</birthyear>
+		<gender>M</gender>
+		<shootingstyle shooting-style-id ="BB-R"></shootingstyle>
+		<shootingstyle shooting-style-id ="FS-C"></shootingstyle>
+		<score shooting-style-id="BB-R">9999</score>
+		<score shooting-style-id="FS-C">9999</score>
+	</person>	
+	
 	
 
 </turnament>
