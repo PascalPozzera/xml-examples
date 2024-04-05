@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE addresses SYSTEM "addresses.dtd">
+
+<!-- Ich bin ein Kommentar hihi -->
+
+<addresses>
+	<person id="person-1">
+		<firstname>Pascal</firstname>
+		<lastname>Pozzera</lastname>
+
+		<address type="work">
+			<street>Feldkreuzstrasse 32a</street>
+			<zip>6890</zip>
+			<city>Lustenau</city>
+		</address>
+		<address type="university">
+			<street>Feldkreuzstrasse 32</street>
+			<zip>6890</zip>
+			<city>Lustenau</city>
+		</address>
+
+		<phone type="mobile">0900666666</phone>
+		<phone type="work">+43557786459</phone>
+
+	</person>
+
+	<person id="person-2">
+		<firstname>Herbert</firstname>
+		<lastname>Eclipse</lastname>
+	</person>
+
+	<company>
+		<company-name>nu GmbH</company-name>
+		<address>
+			<street>blabla</street>
+			<zip>6890</zip>
+			<city>Lustenau</city>
+		</address>
+		<employee person-id="person-1"></employee>
+		<employee person-id="person-2"></employee>
+	</company>
+
+	<company>
+		<company-name>nu2 GmbH</company-name>
+		<address>
+			<street>blabla</street>
+			<zip>6890</zip>
+			<city>Lustenau</city>
+		</address>
+	</company>
+
+
+</addresses>
