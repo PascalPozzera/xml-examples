@@ -5,7 +5,7 @@
 <!ATTLIST person id ID #REQUIRED>
 <!ELEMENT company (company-name, address*,employee*)>
 <!ELEMENT address (street, zip, city)>
-<!ATTLIST address type (work | university) #IMPLIED>
+<!ATTLIST address type (work | university) #IMPLIED> <!-- Atri. -->
 
 
 
