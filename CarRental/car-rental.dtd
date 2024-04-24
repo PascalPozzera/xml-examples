@@ -3,34 +3,6 @@
 This DTD defines a XML vocabulary, which persists data for the
 "car rental" example of this course. 
 -->
-
-
-<!ELEMENT reservierung (mietvertrag)*>
-<!ATTLIST reservierung
-	vermiet-station-id 		CDATA #REQUIRED
-	reservierungs_nr		CDATA #REQUIRED
-	anfangsdatum			CDATA #REQUIRED
-	enddatum				CDATA #REQUIRED
-	kategorie_bezeichnung	IDREF #REQUIRED
-	>
-
-<!ELEMENT kunde (reservierung)*>
-<!ATTLIST kunde
-	fuehrerschein_nummer 	CDATA #REQUIRED 
-	kunde_name 				CDATA #REQUIRED
-	anschrift 				CDATA #REQUIRED
-	>	
-	
-	
-	
-<!ELEMENT mietvertrag EMPTY>
-<!ATTLIST mietvertrag 
-	kennzeichen IDREF 		#REQUIRED
-	km_stand_uebergabe		CDATA #REQUIRED
-	km_stand_rueckgabe		CDATA #REQUIRED
->	
-	
-	
 <!ELEMENT car-rental (stadt*, autokategorie*, auto*, kunde*)>
 
 <!ELEMENT stadt (vermiet-station)*>
@@ -95,4 +67,23 @@ therefore we introduce a simple, surrogate id.
 	extraausstattung-id		IDREF #REQUIRED
 >
 
+<!ELEMENT kunde (reservierung*)>
+<!ATTLIST kunde fuehrerschein_nummer 	CDATA #REQUIRED
+                kunde_name 				CDATA #REQUIRED
+                anschrift 				CDATA #REQUIRED
+>
 
+<!ELEMENT reservierung (mietvertrag)>
+<!ATTLIST reservierung	vermiet-station-id IDREF #REQUIRED
+						reservierungs_nr CDATA #REQUIRED
+						anfangsdatum CDATA #IMPLIED
+						enddatum CDATA #IMPLIED
+						kategorie_bezeichnung IDREF #IMPLIED
+>
+
+<!ELEMENT mietvertrag EMPTY>
+<!ATTLIST mietvertrag kennzeichen IDREF #REQUIRED
+                      km_stand_uebergabe CDATA #REQUIRED
+                      km_stand_rueckgabe CDATA #IMPLIED
+>
+                

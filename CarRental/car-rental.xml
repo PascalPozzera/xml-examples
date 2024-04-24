@@ -6,30 +6,28 @@
 		<vermiet-station
 			id="vermiet-station-2"
 			stations_name="Vorkloster"
-			adresse="Rheinstarße 41"
+			adresse="Rheinstraße 41"
 			mitarbeiter_anzahl="1"
 			geoeffnet_von="08:00:00"
 			geoeffnet_bis="19:00:00"/>
 	</stadt>
 
 	<stadt stadtcode="DO_" name="Dornbirn" einwohner_anzahl="45000">
-		<vermiet-station 
-			id="vermiet-station-3" 
+		<vermiet-station
+			id="vermiet-station-3"
 			stations_name="Bahnhof"
-			adresse="Bahnhofstrasse 1" 
+			adresse="Bahnhofstraße 1"
 			mitarbeiter_anzahl="2"
 			geoeffnet_von="08:00:00"
 			geoeffnet_bis="19:00:00"/>
 		<vermiet-station
-			id="vermiet-station-4"
-			stations_name="Fachhochschule Dornbirn"
-			adresse="FH-Strasse 41"
-			mitarbeiter_anzahl="3"
+			id="fh"
+			stations_name="FH"
+			adresse="Achstraße 1"
+			mitarbeiter_anzahl="1"
 			geoeffnet_von="08:00:00"
-			geoeffnet_bis="19:00:00"/>
+			geoeffnet_bis="23:00:00"/>
 	</stadt>
-	
-	
 	<stadt stadtcode="HOH" name="Hohenems" einwohner_anzahl="15000"/>
 	<stadt stadtcode="FK_" name="Feldkirch" einwohner_anzahl="34000"/>
 	<stadt stadtcode="BZ_" name="Bludenz" einwohner_anzahl="14000"/>
@@ -50,7 +48,6 @@
 			<extraausstattung id="extraausstattung-7" extras_bezeichnung="Klimaanlage" aufpreis="50.0"/>
 		</autotyp>
 	</autokategorie>
-	
 	<autokategorie kategorie_bezeichnung="E-Car" grundtarif="50.0" km_preis="0.40">
 		<autotyp id="autotyp-5" typ_bezeichnung="BMW i3" benzinverbrauch="0.0">
 			<extraausstattung id="extraausstattung-8" extras_bezeichnung="Klimaanlage" aufpreis="30.0"/>
@@ -64,21 +61,10 @@
 		autotyp-id="autotyp-1" vermiet-station-id="vermiet-station-1">
 		<verfuegt_ueber extraausstattung-id="extraausstattung-1"/>
 	</auto>
-	
-	<auto kennzeichen="DO-911S" km_stand="12344" farbe="rot"
-		autotyp-id="autotyp-6" vermiet-station-id="vermiet-station-4">
-		<verfuegt_ueber extraausstattung-id="extraausstattung-1"/>
-	</auto>
-	
-	<auto kennzeichen="DO-912S" km_stand="342555" farbe="weiß"
-		autotyp-id="autotyp-5" vermiet-station-id="vermiet-station-4">
-		<verfuegt_ueber extraausstattung-id="extraausstattung-1"/>
-	</auto>
-	
-	<auto kennzeichen="DO-9123S" km_stand="342555" farbe="weiß"
-		autotyp-id="autotyp-5" vermiet-station-id="vermiet-station-3">
-		<verfuegt_ueber extraausstattung-id="extraausstattung-1"/>
-	</auto>
+	<auto kennzeichen="B-ZOES" km_stand="1000" autotyp-id="autotyp-6" farbe="rot" vermiet-station-id="fh"/>
+	<auto kennzeichen="B-ZOET" km_stand="1000" autotyp-id="autotyp-6" farbe="weiss" vermiet-station-id="fh"/>
+	<auto kennzeichen="B-BWM1" km_stand="1000" autotyp-id="autotyp-5" farbe="rot" vermiet-station-id="fh"/>
+	<auto kennzeichen="B-BMW2" km_stand="1000" autotyp-id="autotyp-5" farbe="weiss" vermiet-station-id="fh"/>
 	
 	<!-- For the purpose of demonstrating datetime literals,
 	     anfangsdatum is set to a datetime value. -->
